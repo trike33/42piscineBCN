@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 16:16:53 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/03/30 16:27:22 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/03/31 08:15:55 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_putstr(char *str)
 	write(1, "\n", 1);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	mystr[3];
 	char	*ptr;
@@ -36,4 +36,4 @@ int	main(void)
 	ptr = mystr;
 	ft_putstr(ptr);
 	return (0);
-}
+}*/

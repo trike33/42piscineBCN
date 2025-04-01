@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:28:15 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/01 12:33:48 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/01 16:58:38 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(int argc, char *argv[])
 {
-	int	i;
+	int		i;
 	char	*ptr;
 
 	i = 1;

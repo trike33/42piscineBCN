@@ -1,1 +1,1 @@
-ls -l | sed -n '1d; n;p'
+ls -la | sed '1{p;d};'

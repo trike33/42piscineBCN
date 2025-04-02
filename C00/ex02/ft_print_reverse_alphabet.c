@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: jfontbon <jfontbon@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/31 09:18:04 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/02 17:46:20 by jfontbon         ###   ########.fr       */
+/*   Created: 2025/03/20 12:04:25 by jfontbon          #+#    #+#             */
+/*   Updated: 2025/03/27 16:02:43 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (src[i])
+void	ft_print_reverse_alphabet(void)
+{
+	char	c;
+
+	c = 'z';
+	while (c >= 'a')
 	{
-		dest[i] = src[i];
-		i++;
+		write(1, &c, 1);
+		c--;
 	}
-	dest[i] = '\0';
-	return (dest);
 }
 
 /*int	main(void)
 {
-	char src[] = "test";
-	char dest[5];
-
-	char *srcptr = src;
-	char *destptr = dest;
-	destptr = ft_strcpy(destptr, srcptr);
+	ft_print_reverse_alphabet();
+	write(1, "\n", 1);
 	return (0);
 }*/

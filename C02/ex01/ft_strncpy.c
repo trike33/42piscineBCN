@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 09:31:54 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/03/31 10:38:15 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/02 17:46:49 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	int	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (i < n && src[i])
 	{
 		dest[i] = src[i];
 		i++;

@@ -1,1 +1,2 @@
-ls -la | sed '1{p;d};'
+#!/bin/sh
+/usr/bin/ls -l | awk 'NR==1 || NR%2==1'

@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 11:20:51 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/02 11:28:45 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:01:53 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ int	ft_iterative_power(int nb, int power)
 		return (0);
 	}
 	else if (power == 0 && nb == 0)
+	{
+		return (1);
+	}
+	else if (power == 0)
 	{
 		return (1);
 	}

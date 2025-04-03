@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 11:34:49 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/02 11:39:13 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:02:30 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int	ft_recursive_power(int nb, int power)
 	{
 		return (1);
 	}
-	else if (power == 1)
+	else if (power == 0)
 	{
-		return (nb);
+		return (1);
 	}
 	else
 	{

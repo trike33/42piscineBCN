@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 10:23:39 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/01 11:05:43 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:56:39 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_atoi(char *str)
 	{
 		if (*str == '-')
 		{
-			sign = -1;
+			sign = -sign;
 		}
 		str++;
 	}

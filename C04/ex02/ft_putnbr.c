@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 10:07:39 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/01 10:26:46 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:55:28 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ void	ft_putnbr(int nb)
 {
 	char	digit;
 
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
 	if (nb < 0)
 	{
 		write(1, "-", 1);

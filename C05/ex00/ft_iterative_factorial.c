@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 17:13:44 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/01 17:42:58 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 19:57:51 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ int	ft_iterative_factorial(int nb)
 	if (nb < 0)
 	{
 		return (0);
+	}
+	if (nb == 0)
+	{
+		return (1);
 	}
 	result = nb;
 	i = 1;

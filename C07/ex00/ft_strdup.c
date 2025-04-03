@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:45:50 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/03 11:37:49 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:09:23 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ char	*ft_strdup(char *src)
 	{
 		i++;
 	}
-	if (i <= 0)
+	copy = (char *)malloc(i + 1);
+	if (!copy)
 	{
 		return (NULL);
 	}
-	copy = (char *)malloc(i + 1);
 	start = copy;
 	while (*src != '\0')
 	{

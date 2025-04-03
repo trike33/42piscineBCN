@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 11:52:30 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/03 12:13:42 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:07:13 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	if (min >= max)
 	{
 		*range = NULL;
+		return (0);
 	}
 	i = min;
 	*range = (int *)malloc((max - min) * 4);

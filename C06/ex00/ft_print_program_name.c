@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:22:09 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/01 12:27:48 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 20:04:28 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@ int	main(int argc, char *argv[])
 {
 	char	*prog_name;
 
+	if (argc > 1)
+	{
+		return (1);
+	}
 	prog_name = argv[0];
 	while (*prog_name != '\0')
 	{

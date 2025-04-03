@@ -6,9 +6,12 @@
 /*   By: jfontbon <jfontbon@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 12:14:14 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/04/03 12:25:14 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 13:15:17 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <stdlib.h>
 
 int		ft_strlen(char *str)
 {
@@ -24,24 +27,38 @@ int		ft_strlen(char *str)
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	char	*ptr1;
 	int		i;
-	char	result[size];
+	int		j;
+	int		k;
+	int		d;
+	char	*result;
 
-	i = 0;
-	while (i <= size)
+	result = (char *)malloc(size);
+	i = 0; //traverse whole size
+	j = 0; //traverse **strs args
+	while (i < size)
 	{
-		if (ft_strlen(*strs[i]) > 1)
+		d = 0; // traverse each **strs args
+		while (d < ft_strlen(strs[j]))
 		{
-			
+			result[i] = strs[j][d];
+			d++;
+			i++;
 		}
-		else
+		if (i < size - 1)
 		{
-			result[i] = *strs[i];
+			k = 0; //traverse each *sep arg
+			while (sep[k] != '\0')
+			{
+				result[i] = sep[k];
+				i++;
+				k++;
+			}
 		}
-		i++;
+		j++;
 	}
-	
+	result[j] = '\0';
+	return (result);
 }
 
 int	main(void)
@@ -54,7 +71,8 @@ int	main(void)
         "C"
     };
 	char sep[] = " ";
-	int size = 22;
-	char **result = ft_strjoin(size, &strings, sep);
+	int size = 25;
+	char *result = ft_strjoin(size, strings, sep);
+	printf("result %s\n", result);
 	return (0);
 }

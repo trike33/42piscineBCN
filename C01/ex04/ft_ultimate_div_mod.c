@@ -6,16 +6,21 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/30 16:06:33 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/03/31 08:15:41 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/03 09:45:10 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*a = *a / *b;
-	*b = *a % *b;
+	int	div;
+	int	mod;
+
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }
 
 /*int	main(void)
@@ -30,5 +35,6 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	c = &a;
 	d = &b;
 	ft_ultimate_div_mod(c, d);
+	printf("div = %i, mod = %i\n", a, b);
 	return (0);
 }*/

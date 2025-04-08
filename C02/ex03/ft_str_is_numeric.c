@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 10:52:12 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/03/31 10:58:21 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/08 17:38:12 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ int	ft_str_is_numeric(char *str)
 	int	is_numeric;
 
 	i = 0;
+	if (str[i] == '\0')
+	{
+		return (1);
+	}
 	while (str[i] != '\0')
 	{
 		if (str[i] <= '9' && str[0] >= '0')

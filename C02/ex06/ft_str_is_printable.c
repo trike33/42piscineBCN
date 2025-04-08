@@ -6,7 +6,7 @@
 /*   By: jfontbon <jfontbon@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 11:07:53 by jfontbon          #+#    #+#             */
-/*   Updated: 2025/03/31 11:09:03 by jfontbon         ###   ########.fr       */
+/*   Updated: 2025/04/08 17:40:18 by jfontbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ int	ft_str_is_printable(char *str)
 	int	i;
 
 	i = 0;
+	if (str[i] == '\0')
+	{
+		return (1);
+	}
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 32 && str[i] <= 126)
